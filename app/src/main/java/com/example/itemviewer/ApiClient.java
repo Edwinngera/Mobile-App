@@ -1,7 +1,11 @@
 package com.example.itemviewer;
 
+import com.example.itemviewer.ApiService;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class ApiClient {
-    private static final String BASE_URL = "https://your-api-base-url.com/"; // Replace with your API base URL
+    private static final String BASE_URL = ""; // Replace with your API base URL
 
     private static Retrofit retrofit;
 
@@ -15,4 +19,3 @@ public class ApiClient {
         return retrofit.create(ApiService.class);
     }
 }
-
